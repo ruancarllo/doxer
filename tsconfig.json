@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": "source",
+    "outDir": "target",
+    
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "esModuleInterop": true
+  }
+}
