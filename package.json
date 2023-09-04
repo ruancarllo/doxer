@@ -1,0 +1,27 @@
+{
+  "name": "doxer",
+  "description": "A tool to unite and standardize PDF and SVG documents",
+  "author": "Ruan Carllo Silva",
+  "version": "1.0.0",
+
+  "main": "target/main.js",
+
+  "devDependencies": {
+    "electron": "v26.1.0",
+    "puppeteer": "v21.1.1",
+    "pdf-lib": "v1.17.1",
+    "ts-node": "v10.9.1",
+    "typescript": "v5.2.2",
+    "electron-packager": "17.1.2"
+  },
+
+  "scripts": {
+    "prestart": "tsc",
+    "start": "electron .",
+
+    "prebuild": "tsc",
+    "build": "electron-packager . Doxer --plataform=darwin --arch=arm64",
+
+    "exec": "electron ."
+  }
+}
